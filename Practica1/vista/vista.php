@@ -19,7 +19,7 @@
 
                     </td>
                     <td>
-                        <input type="text" name="nom">
+                        <input type="text" name="nom" <?php if (isset($_POST['nom'])) { echo htmlentities($_POST['nom']); } ?>">
 
                     </td>
                 </tr>
@@ -29,7 +29,7 @@
 
                     </td>
                     <td>
-                        <input type="email" name="email" id="email" >
+                        <input type="email" name="email" id="email" <?php if (isset($_POST['email'])) { echo htmlentities($_POST['email']); } ?>">
 
                     </td>
                 </tr>
@@ -41,7 +41,7 @@
 
                     </td>
                     <td>
-                        <textarea name="AreaText" id="ta" cols="30" rows="10"></textarea>
+                        <textarea name="AreaText" id="ta" cols="30" rows="10" <?php if (isset($_POST['AreaText'])) { echo htmlentities($_POST['AreaText']); } ?>"></textarea>
 
                     </td>
                 </tr>
